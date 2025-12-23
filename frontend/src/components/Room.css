@@ -1,0 +1,82 @@
+.room-card {
+  border: 1px solid #ada5a5;
+  border-radius: 8px;
+  padding: 14px 16px;
+  background: #fff;
+  margin: 0;
+  font-family: Arial, sans-serif;
+
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.room-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.08);
+}
+
+.room-name {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+  color: #2e2e2e;
+}
+
+.room-type,
+.room-price {
+  margin: 0;
+  font-size: 15px;
+  color: #555;
+}
+
+.available {
+  margin-top: 6px;
+  padding: 6px 10px;
+  width: fit-content;
+  border-radius: 20px;
+  background: #e9f8ec;
+  color: #1a7d2c;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.not-available {
+  margin-top: 6px;
+  padding: 6px 10px;
+  width: fit-content;
+  border-radius: 20px;
+  background: #ffeaea;
+  color: #a10000;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.book-btn {
+  margin-top: 10px;
+  padding: 8px 14px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  background: #007bff;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.book-btn:hover {
+  background: #005ec4;
+  transform: translateY(-1px);
+}
+
+.book-btn:disabled {
+  background: #c4c4c4;
+  cursor: not-allowed;
+  transform: none;
+}
